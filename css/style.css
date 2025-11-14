@@ -1,0 +1,498 @@
+/* =========================================
+   RESET + GLOBAL STYLES
+========================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #e0f7f4, #ffffff);
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* =========================================
+   NAVBAR
+========================================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #00796b;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.navbar .logo span {
+  color: #c8e6c9;
+}
+
+.navbar nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.navbar nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar nav ul li a:hover,
+.navbar nav ul li a.active {
+  color: #c8e6c9;
+}
+
+/* =========================================
+   SECTION STYLES
+========================================= */
+section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+section h1 {
+  font-size: 3rem;
+  color: #00796b;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #444;
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  text-decoration: none;
+  background: #00796b;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #004d40;
+  transform: scale(1.05);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #00796b;
+  color: #00796b;
+}
+
+.btn-outline:hover {
+  background: #00796b;
+  color: #fff;
+}
+
+/* =========================================
+   PROFILE PHOTO
+========================================= */
+.profile-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.profile-photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* =========================================
+   ABOUT SECTION
+========================================= */
+.about-text {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-text h2 {
+  color: #00796b;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+}
+
+.about-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-text ul li {
+  background: #e0f2f1;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* =========================================
+   PROJECTS SECTION
+========================================= */
+.projects-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.project-card {
+  background: #e0f2f1;
+  padding: 25px;
+  border-radius: 16px;
+  width: 300px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h2 {
+  color: #00796b;
+  margin-bottom: 10px;
+}
+
+.project-year {
+  font-size: 0.9rem;
+  color: #004d40;
+}
+/* ===== CERT ICONS GREEN CARD ===== */
+.cert-icons {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0;
+}
+
+.cert-card-green {
+  background: linear-gradient(135deg, #009688, #00796b);
+  color: #fff;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 700px;
+  width: 90%;
+}
+
+.cert-card-green h2 {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.cert-icon-row {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+
+.cert-icon-row a {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 16px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.85rem;
+  min-width: 60px;
+}
+
+.cert-icon-row a i {
+  font-size: 1.5rem;
+  color: #ffeb3b;
+  margin-bottom: 5px;
+}
+
+.cert-icon-row a:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 600px) {
+  .cert-icon-row {
+    gap: 20px;
+  }
+
+  .cert-card-green {
+    padding: 25px 20px;
+  }
+
+  .cert-icon-row a i {
+    font-size: 1.2rem;
+  }
+}
+/* ===== CERTIFICATION CARDS ===== */
+.certifications-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 20px;
+}
+
+.cert-card {
+  background: #e0f2f1;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  width: 260px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* >>> IMAGE LAYOUT <<< */
+.cert-card a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cert-card img {
+  width: 90%;               /* not full width, centered */
+  height: 140px;            /* medium height */
+  object-fit: contain;      /* keep horizontal proportion */
+  border-radius: 10px;
+  background: #fff;
+  padding: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cert-card h2 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #00796b;
+  font-weight: 600;
+}
+
+/* Responsive behavior */
+@media (max-width: 900px) {
+  .cert-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .cert-card {
+    width: 90%;
+  }
+}
+
+
+/* =========================================
+   CONTACT SECTION
+========================================= */
+.contact-section {
+  max-width: 700px;
+  margin: 100px auto;
+  padding: 50px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  color: #333;
+}
+
+.contact-section h1 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  color: #00796b;
+}
+
+.contact-section p {
+  margin-bottom: 40px;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+/* ===== FORM ===== */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  background: #fff;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #00796b;
+  box-shadow: 0 0 8px rgba(0, 121, 107, 0.4);
+}
+
+/* ===== BUTTON ===== */
+.contact-form button {
+  background: #00796b;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #004d40;
+  transform: translateY(-3px);
+}
+
+/* =========================================
+   SOCIAL LINKS (HOME & CONTACT)
+========================================= */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.social-links a {
+  font-size: 1.8rem;
+  color: #00796b;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #004d40;
+  transform: scale(1.2);
+}
+.social-links a {
+  text-decoration: none;
+  color: #00796b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.8rem;
+  transition: 0.3s;
+}
+
+.social-links a span {
+  font-size: 0.75rem;
+  margin-top: 4px;
+  color: #004d40;
+}
+
+.social-links a:hover {
+  color: #004d40;
+  transform: scale(1.2);
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+footer {
+  text-align: center;
+  padding: 25px 0;
+  background: #00796b;
+  color: #fff;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section h1 {
+    font-size: 2.2rem;
+  }
+
+  .project-card,
+  .cert-card {
+    width: 90%;
+  }
+
+  .contact-section {
+    padding: 30px;
+    margin: 60px auto;
+  }
+
+  .profile-photo img {
+    width: 90px;
+    height: 90px;
+  }
+}
