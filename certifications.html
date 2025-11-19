@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certifications | Elhadi Guemaz</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ===== Header / Navbar ===== -->
+  <header class="navbar">
+    <div class="logo">Elhadi<span>Guemaz</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="certifications.html" class="active">Certifications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="certifications-hero" data-aos="fade-down">
+    <h1>My Certifications</h1>
+    <p>Click on each certificate to view details. PDFs will open in a new tab.</p>
+  </section>
+
+  <!-- ===== Certifications Gallery ===== -->
+  <section class="certifications-section" data-aos="fade-up">
+  <!-- NEBOSH IGC -->
+  <div class="cert-viewer" data-aos="zoom-in">
+    <h3>NEBOSH IGC</h3>
+    <iframe 
+      src="assets/NEBOSH_IGC.pdf#toolbar=0&navpanes=0&scrollbar=0" 
+      width="100%" 
+      height="400"
+      style="border: 2px solid #00796b; border-radius: 10px;">
+    </iframe>
+  </div>
+
+  <!-- NEBOSH PSM -->
+  <div class="cert-viewer" data-aos="zoom-in" data-aos-delay="100">
+    <h3>NEBOSH PSM</h3>
+    <iframe 
+      src="assets/NEBOSH_PSM.pdf#toolbar=0&navpanes=0&scrollbar=0" 
+      width="100%" 
+      height="400"
+      style="border: 2px solid #00796b; border-radius: 10px;">
+    </iframe>
+  </div>
+
+  <!-- IOSH TOT -->
+  <div class="cert-viewer" data-aos="zoom-in" data-aos-delay="200">
+    <h3>IOSH TOT</h3>
+    <iframe 
+      src="assets/IOSH-TOT.pdf#toolbar=0&navpanes=0&scrollbar=0" 
+      width="100%" 
+      height="400"
+      style="border: 2px solid #00796b; border-radius: 10px;">
+    </iframe>
+  </div>
+
+  <!-- IWCF -->
+  <div class="cert-viewer" data-aos="zoom-in" data-aos-delay="300">
+    <h3>IWCF</h3>
+    <iframe 
+      src="assets/IWCF.pdf#toolbar=0&navpanes=0&scrollbar=0" 
+      width="100%" 
+      height="400"
+      style="border: 2px solid #00796b; border-radius: 10px;">
+    </iframe>
+  </div>
+</section>
+
+  <!-- ===== Certificate Selector (New Section) ===== -->
+  <section class="cert-selector" data-aos="fade-up">
+    <h2>📂 View Other Certificates</h2>
+    <p>Select a PDF from the list below to open it:</p>
+    <div class="cert-buttons">
+      <a href="assets/NEBOSH_IGC.pdf" target="_blank" class="btn"><i class="fa-solid fa-file-pdf"></i> NEBOSH IGC</a>
+      <a href="assets/NEBOSH_PSM.pdf" target="_blank" class="btn"><i class="fa-solid fa-file-pdf"></i> NEBOSH PSM</a>
+      <a href="assets/IOSH-TOT.pdf" target="_blank" class="btn"><i class="fa-solid fa-file-pdf"></i> IOSH TOT</a>
+      <a href="assets/IWCF.pdf" target="_blank" class="btn"><i class="fa-solid fa-file-pdf"></i> IWCF</a>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>© 2025 Elhadi Guemaz — All Rights Reserved</p>
+  </footer>
+
+  <!-- ===== Scripts ===== -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1200, once: true });
+  </script>
+</body>
+</html>
