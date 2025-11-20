@@ -164,16 +164,16 @@ object-fit: cover;
 SECTIONS HEADINGS
 ========================================= */
 section h1, section h2 {
-font-size: 2.5rem;
-margin-bottom: 20px;
+font-size: 2.0rem;
+margin-bottom: 10px;
 text-align: center;
 color: #d4af37;
 }
 
 section p {
-font-size: 1.1rem;
+font-size: 1.0rem;
 max-width: 750px;
-margin: 0 auto 40px;
+margin: 0 auto 200px;
 color: #f0e6d2;
 text-align: center;
 }
@@ -401,5 +401,6 @@ RESPONSIVE
 .navbar nav ul { flex-direction: column; gap: 15px; }
 .skills-grid, .projects-section, .certifications-section { grid-template-columns: 1fr; }
 }
+
 
 
